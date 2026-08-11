@@ -1,0 +1,124 @@
+1. Take an integer input from the user and print whether it is positive or negative.
+
+n = int(input("enter the number: "))
+if n > 0:
+    print(f"{n} is positive")
+else:
+    print(f"{n} is negative")
+
+output :
+enter the number: 2
+2 is positive
+------------------------------------------------------------------------------------------------
+2.    Take an input number from the user and check whether it is even or odd.
+
+n = int(input("enter the number: "))
+if n % 2 == 0:
+    print(f"{n} is an even number")
+else:
+    print(f"{n} is an odd number")
+
+Output:
+enter the number: 3
+3 is an odd number
+------------------------------------------------------------------------------------------------
+3.    Ask the user for their age. If the age is 18 or more, print “You are eligible to vote.”
+
+age = int(input("enter your age: "))
+if age >= 18:
+    print("You are eligible to vote")
+else:
+    print("You are not eligible to vote")
+
+Output:
+enter your age: 16
+You are not eligible to vote
+------------------------------------------------------------------------------------------------
+4.    Take marks input from the user and print:
+o   "Pass" if marks >= 35
+o   "Fail" otherwise
+
+marks = int(input("enter your marks: "))
+if marks >= 35:
+    print("Pass")
+else:
+    print("Fail")
+
+Output: 
+enter your marks: 34
+Fail
+enter your marks: 78
+Pass
+------------------------------------------------------------------------------------------------
+5.    Take two numbers as input and print the greater number.
+
+a,b = map(int,input().split())
+if a>b:
+    print(f"{a} is greater than {b}")
+else:
+    print(f"{b} is greater than {a}")
+
+Output:
+enter the two numbers a and b: 23 54
+54 is greater than 23
+------------------------------------------------------------------------------------------------
+6.    Check if a given number is a multiple of 5 or not.
+
+n = int(input())
+if n%5==0:
+    print(f"The given number {n} is a multiple of 5")
+else:
+    print(f"The given number {n} is not a multiple of 5") 
+
+Output:
+enter the number: 55
+The given number 55 is a multiple of 5
+------------------------------------------------------------------------------------------------
+7.    Take a number input and print whether it is divisible by 3 and 5.
+
+n = int(input("enter a number: "))
+if n%3 == 0 and n%5 == 0:
+        print(f"{n} is divisible by 3 and 5")
+else:
+    print(f"{n} is not divisible by 3 and 5")
+
+Output:
+enter a number: 45
+45 is divisible by 3 and 5
+------------------------------------------------------------------------------------------------
+8.    Take a character input and check if it is a vowel or consonant.
+
+c = input("enter a character: ")
+vowels = "aeiou"
+if c in vowels:
+    print(f"{c} is a vowel")
+else:
+    print(f"{c} is a consonant")
+
+Output:
+enter a character: e
+e is a vowel
+enter a character: z
+z is a consonant
+------------------------------------------------------------------------------------------------
+9.    Ask the user to enter their name. If the name is “admin”, print “Welcome, Admin!”
+
+name = input("enter your name: ")
+print(f"Welcome, {name}!")
+
+Output:
+enter your name: Shiva
+Welcome, Shiva!
+------------------------------------------------------------------------------------------------
+10.Take a number input and print “Zero” if it is 0, otherwise print “Non-Zero”
+
+n = int(input("enter a number: "))
+if n == 0:
+    print("Zero")
+else:
+    print("Non-Zero")
+
+Output:
+enter a number: 1
+Non-Zero
+

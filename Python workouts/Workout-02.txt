@@ -1,0 +1,862 @@
+For Loops:
+
+Loops:
+ 
+1. Print numbers from 1 to 5 using a for loop
+
+for i in range(1,6):
+    print(i)
+
+ Output:
+1 
+2 
+3 
+4 
+5
+--------------------------------------------------------------------------------
+2. Print even numbers between 1 and 10
+
+for i in range(1,11):
+    if i%2 == 0:
+        print(i,end=" ")
+
+ Output:
+2 4 6 8 10
+--------------------------------------------------------------------------------
+3. Print multiplication table of a number
+ Input:
+Enter number: 5
+
+n = int(input("enter number: "))
+for i in range(1,11):
+    print(f"{n} x {i} = ",n*i)
+
+Output:
+5 x 1 = 5 
+5 x 2 = 10 
+5 x 3 = 15 
+... 
+5 x 10 = 50
+-------------------------------------------------------------------------------
+4. Print all characters of a string
+ Input:
+Enter string: python
+
+s = input("enter string: ")
+for i in s:
+    print(i)
+
+Output:
+p 
+y 
+t 
+h 
+o 
+n
+
+example:
+print vowels from string
+print consonents from string
+print the count of vowels from string.
+------------------------------------------------------------------------------
+5. Find sum of digits of a number
+ Input:
+Enter number: 123
+
+n =int(input())
+print(sum(int(i) for i in str(n)))
+
+Output:
+Sum = 6
+-----------------------------------------------------------------------------
+Find the factors of a number :
+
+n = int(input("Enter number: "))
+
+factors = []
+
+for i in range(1, int(n ** 0.5) + 1):
+    if n % i == 0:
+        factors.append(i)
+
+        if i != n // i:
+            factors.append(n // i)
+
+factors.sort()
+
+print("Factors:", *factors)
+
+Output:
+N=6
+Factors:1 2 3 6
+----------------------------------------------------------------------------
+
+6. Reverse a number using a while loop
+
+n = int(input("enter a number: "))
+rev=0
+while n>0:
+    digit = n%10
+    rev =rev*10+digit
+    n = n//10
+print(rev)
+
+ Input:
+Enter number: 456
+Output:
+654
+---------------------------------------------------------------------------
+7. Print factorial of a number
+
+n =int(input("enter a number: "))
+fact = 1
+for i in range(1,n+1):
+    fact *=i
+print("Factorial= ",fact)
+
+ Input:
+Enter number: 5
+Output:
+Factorial = 120
+--------------------------------------------------------------------------
+8. Print squares of numbers from 1 to n
+ 
+n = int(input("enter a number: "))
+for i in range(1,n+1):
+    print(i**2)
+
+Input:
+Enter number: 4
+Output:
+1 4 9 16
+--------------------------------------------------------------------------
+9. Check if a number is prime
+
+n = int(input("Enter number: "))
+
+if n < 2:
+    print("Not a prime number")
+else:
+    is_prime = True
+
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
+            is_prime = False
+            break
+
+    if is_prime:
+        print("Prime number")
+    else:
+        print("Not a prime number")
+
+ Input:
+Enter number: 7
+Output:
+Prime number
+-------------------------------------------------------------------------
+10. Count vowels in a string
+
+s = input("Enter string: ")
+
+count = 0
+
+for char in s:
+    if char.lower() in "aeiou":
+        count += 1
+
+print("Number of vowels =", count)
+
+
+'''''''
+s = input("Enter string: ")
+
+count = sum(1 for char in s if char.lower() in "aeiou")
+
+print("Number of vowels =", count)'''''''
+
+
+ Input:
+Enter string: hello
+Output:
+Number of vowels = 2
+—------------------------------------------------------------------------------------------------------------------------
+
+loops:
+
+
+Print numbers from 1 to 5 using a for loop?
+Calculate the sum of numbers from 1 to 10 using a for loop ?
+Print even numbers from 1 to 10 using a for loop?
+Calculate the factorial of a number using a for loop?
+Print elements of a list using a for loop ?
+Find the maximum value in a list using a for loop ?
+Print characters in a string using a for loop ?
+Count the number of vowels in a string using a for loop ?
+Iterate over a dictionary and print key-value pairs using a for loop ?
+Print a pattern using nested for loops ?
+Calculate the sum of all even numbers from 1 to 100 using a for loop ?
+Print the first 10 Fibonacci numbers using a for loop ?
+Find and print the common elements between two lists using a for loop ?
+Generate a multiplication table for a given number using a for loop ?
+Calculate the factorial of a number using a for loop with a range starting from 1 ?
+Print the reverse of a string using a for loop ?
+Generate a list of squares for numbers from 1 to 10 using a for loop ?
+Count the number of words in a sentence using a for loop ?
+Calculate the sum of digits in a number using a for loop ?
+Generate a list of prime numbers within a given range using a for loop ?
+Calculate the power of a number using a for loop ?
+Reverse a list using a for loop ?
+Find and print the largest element in a list using a for loop ?
+Calculate the average of numbers in a list using a for loop ?
+Print a countdown from a given number using a for loop ?
+Generate a pattern of numbers using nested for loops ?
+Calculate the product of elements in a list using a for loop ?
+Find and print the position (index) of an element in a list using a for loop ?
+Calculate the sum of all odd numbers from 1 to 100 using a for loop ?
+Print a triangle of asterisks using a for loop ?
+Calculate the LCM (Least Common Multiple) of two numbers using a for loop ?
+Count the number of prime numbers in a range using a for loop ?
+Reverse words in a sentence using a for loop ?
+Print a diamond pattern using nested for loops ?
+Print a hollow square pattern using nested for loops ?
+Calculate the factorial of a number using a for loop with a specified step ?
+Print a right-angled triangle pattern using a for loop ?
+Generate a list of multiples of a number within a given range using a for loop ?
+
+—------------------------------------------------------------------------------------------------------------------------
+
+FOR LOOP
+1. Print Numbers from 1 to 5
+Question: Print numbers from 1 to 5 using a for loop.
+Sample Input 1
+No input required
+Sample Output 1
+1
+2
+3
+4
+5
+Sample Input 2
+No input required
+Sample Output 2
+1
+2
+3
+4
+5
+
+2. Sum of Numbers from 1 to 10
+Question: Calculate the sum of numbers from 1 to 10 using a for loop.
+Sample Input 1
+No input required
+Sample Output 1
+Sum: 55
+Sample Input 2
+No input required
+Sample Output 2
+Sum: 55
+
+3. Print Even Numbers from 1 to 10
+Question: Print even numbers from 1 to 10 using a for loop.
+Sample Input 1
+No input required
+Sample Output 1
+2
+4
+6
+8
+10
+Sample Input 2
+No input required
+Sample Output 2
+2
+4
+6
+8
+10
+
+4. Factorial of a Number
+Question: Calculate the factorial of a number using a for loop.
+Sample Input 1
+Enter a number: 5
+Sample Output 1
+Factorial: 120
+Sample Input 2
+Enter a number: 4
+Sample Output 2
+Factorial: 24
+
+5. Print Elements of a List
+Question: Print all elements of a list using a for loop.
+Sample Input 1
+List: [10, 20, 30, 40]
+Sample Output 1
+10
+20
+30
+40
+Sample Input 2
+List: ["Python", "Java", "SQL"]
+Sample Output 2
+Python
+Java
+SQL
+
+6. Find Maximum Value in a List
+Question: Find the maximum value in a list using a for loop.
+Sample Input 1
+List: [10, 50, 20, 40]
+Sample Output 1
+Maximum value: 50
+Sample Input 2
+List: [5, 25, 15, 30]
+Sample Output 2
+Maximum value: 30
+
+7. Print Characters in a String
+Question: Print each character in a string using a for loop.
+Sample Input 1
+Enter string: Python
+Sample Output 1
+P
+y
+t
+h
+o
+n
+Sample Input 2
+Enter string: Hello
+Sample Output 2
+H
+e
+l
+l
+o
+
+8. Count Vowels in a String
+Question: Count the number of vowels in a string using a for loop.
+Sample Input 1
+Enter string: Python
+Sample Output 1
+Number of vowels: 1
+Sample Input 2
+Enter string: education
+Sample Output 2
+Number of vowels: 5
+
+9. Iterate Over a Dictionary
+Question: Iterate over a dictionary and print key-value pairs using a for loop.
+Sample Input 1
+Dictionary: {"name": "Jani", "age": 25}
+Sample Output 1
+name : Jani
+age : 25
+Sample Input 2
+Dictionary: {"course": "Python", "duration": "3 months"}
+Sample Output 2
+course : Python
+duration : 3 months
+
+10. Pattern Using Nested for Loops
+Question: Print the following pattern using nested for loops.
+
+n = int(input("Enter number of rows: "))
+
+for i in range(1, n + 1):
+    for j in range(i):
+        print("*", end="")
+    print()
+
+Sample Input 1
+Enter number of rows: 3
+Sample Output 1
+*
+**
+***
+Sample Input 2
+Enter number of rows: 5
+Sample Output 2
+*
+**
+***
+****
+*****
+
+11. Sum of Even Numbers from 1 to 100
+Question: Calculate the sum of all even numbers from 1 to 100 using a for loop.
+
+sum=0
+for i in range(1,101):
+	if i%2 == 0:
+		sum+=i
+print(sum)
+
+Sample Input 1
+No input required
+Sample Output 1
+Sum of even numbers: 2550
+Sample Input 2
+No input required
+Sample Output 2
+Sum of even numbers: 2550
+
+12. First 10 Fibonacci Numbers
+Question: Print the first 10 Fibonacci numbers using a for loop.
+
+a = 0
+b = 1
+
+for i in range(10):
+    print(a)
+    a, b = b, a + b
+
+Sample Input 1
+No input required
+Sample Output 1
+0
+1
+1
+2
+3
+5
+8
+13
+21
+34
+Sample Input 2
+No input required
+Sample Output 2
+0
+1
+1
+2
+3
+5
+8
+13
+21
+34
+
+13. Common Elements Between Two Lists
+Question: Find and print the common elements between two lists using a for loop.
+
+list1 = [1, 2, 3, 4]
+list2 = [3, 4, 5, 6]
+
+print("Common elements:")
+
+for i in list1:
+    if i in list2:
+        print(i)
+
+Sample Input 1
+List 1: [1, 2, 3, 4]
+List 2: [3, 4, 5, 6]
+Sample Output 1
+Common elements:
+3
+4
+Sample Input 2
+List 1: [10, 20, 30]
+List 2: [20, 30, 40]
+Sample Output 2
+Common elements:
+20
+30
+
+14. Multiplication Table
+Question: Generate a multiplication table for a given number using a for loop.
+Sample Input 1
+Enter number: 5
+Sample Output 1
+5 x 1 = 5
+5 x 2 = 10
+5 x 3 = 15
+5 x 4 = 20
+5 x 5 = 25
+5 x 6 = 30
+5 x 7 = 35
+5 x 8 = 40
+5 x 9 = 45
+5 x 10 = 50
+Sample Input 2
+Enter number: 7
+Sample Output 2
+7 x 1 = 7
+7 x 2 = 14
+7 x 3 = 21
+7 x 4 = 28
+7 x 5 = 35
+7 x 6 = 42
+7 x 7 = 49
+7 x 8 = 56
+7 x 9 = 63
+7 x 10 = 70
+
+15. Factorial Using Range Starting from 1
+Question: Calculate the factorial of a number using a for loop with a range starting from 1.
+Sample Input 1
+Enter number: 5
+Sample Output 1
+Factorial: 120
+Sample Input 2
+Enter number: 3
+Sample Output 2
+Factorial: 6
+
+16. Reverse a String
+Question: Print the reverse of a string using a for loop.
+
+s = input("Enter string: ")
+
+reverse = ""
+
+for char in s:
+    reverse = char + reverse
+
+print("Reverse:", reverse)
+
+Sample Input 1
+Enter string: Python
+Sample Output 1
+Reverse: nohtyP
+Sample Input 2
+Enter string: Hello
+Sample Output 2
+Reverse: olleH
+
+17. List of Squares
+Question: Generate a list of squares for numbers from 1 to 10 using a for loop.
+
+def squares(n):
+    for i in range(1, n + 1):
+        yield i * i
+
+
+n = int(input("Enter ending number: "))
+
+result = squares(n)
+
+print(list(result))
+
+Sample Input 1
+No input required
+Sample Output 1
+[1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+Sample Input 2
+Enter ending number: 5
+Sample Output 2
+[1, 4, 9, 16, 25]
+
+18. Count Words in a Sentence
+Question: Count the number of words in a sentence using a for loop.
+
+sentence = input("Enter sentence: ")
+
+count = 0
+
+for word in sentence.split():
+    count += 1
+
+print("Number of words:", count)
+
+Sample Input 1
+Enter sentence: Python is easy
+Sample Output 1
+Number of words: 3
+Sample Input 2
+Enter sentence: I love Python programming
+Sample Output 2
+Number of words: 4
+
+19. Sum of Digits
+Question: Calculate the sum of digits in a number using a for loop.
+Sample Input 1
+Enter number: 1234
+Sample Output 1
+Sum of digits: 10
+Sample Input 2
+Enter number: 567
+Sample Output 2
+Sum of digits: 18
+
+20. Prime Numbers Within a Range
+Question: Generate a list of prime numbers within a given range using a for loop.
+Sample Input 1
+Enter starting number: 1
+Enter ending number: 10
+Sample Output 1
+Prime numbers: [2, 3, 5, 7]
+Sample Input 2
+Enter starting number: 10
+Enter ending number: 20
+Sample Output 2
+Prime numbers: [11, 13, 17, 19]
+
+21. Power of a Number
+Question: Calculate the power of a number using a for loop.
+Sample Input 1
+Enter base: 2
+Enter exponent: 5
+Sample Output 1
+Result: 32
+Sample Input 2
+Enter base: 3
+Enter exponent: 3
+Sample Output 2
+Result: 27
+
+22. Reverse a List
+Question: Reverse a list using a for loop.
+Sample Input 1
+List: [1, 2, 3, 4, 5]
+Sample Output 1
+Reversed list: [5, 4, 3, 2, 1]
+Sample Input 2
+List: ["A", "B", "C"]
+Sample Output 2
+Reversed list: ["C", "B", "A"]
+
+23. Largest Element in a List
+Question: Find and print the largest element in a list using a for loop.
+Sample Input 1
+List: [10, 25, 5, 40]
+Sample Output 1
+Largest element: 40
+Sample Input 2
+List: [50, 20, 70, 30]
+Sample Output 2
+Largest element: 70
+Q6 and Q23 are essentially the same question. You can keep one for the practice set.
+
+24. Average of Numbers in a List
+Question: Calculate the average of numbers in a list using a for loop.
+Sample Input 1
+List: [10, 20, 30, 40, 50]
+Sample Output 1
+Average: 30.0
+Sample Input 2
+List: [5, 10, 15]
+Sample Output 2
+Average: 10.0
+
+25. Countdown
+Question: Print a countdown from a given number using a for loop.
+Sample Input 1
+Enter number: 5
+Sample Output 1
+5
+4
+3
+2
+1
+Sample Input 2
+Enter number: 3
+Sample Output 2
+3
+2
+1
+
+26. Number Pattern Using Nested Loops
+Question: Generate a pattern of numbers using nested for loops.
+Sample Input 1
+Enter number of rows: 3
+Sample Output 1
+1
+12
+123
+Sample Input 2
+Enter number of rows: 5
+Sample Output 2
+1
+12
+123
+1234
+12345
+
+27. Product of Elements in a List
+Question: Calculate the product of all elements in a list using a for loop.
+Sample Input 1
+List: [1, 2, 3, 4]
+Sample Output 1
+Product: 24
+Sample Input 2
+List: [2, 3, 5]
+Sample Output 2
+Product: 30
+
+28. Find Position/Index of an Element
+Question: Find and print the position (index) of an element in a list using a for loop.
+Sample Input 1
+List: [10, 20, 30, 40]
+Enter element: 30
+Sample Output 1
+Element found at index: 2
+Sample Input 2
+List: ["Python", "Java", "SQL"]
+Enter element: SQL
+Sample Output 2
+Element found at index: 2
+
+29. Sum of Odd Numbers from 1 to 100
+Question: Calculate the sum of all odd numbers from 1 to 100 using a for loop.
+Sample Input 1
+No input required
+Sample Output 1
+Sum of odd numbers: 2500
+Sample Input 2
+No input required
+Sample Output 2
+Sum of odd numbers: 2500
+
+30. Triangle of Asterisks
+Question: Print a triangle of asterisks using a for loop.
+Sample Input 1
+Enter number of rows: 3
+Sample Output 1
+*
+**
+***
+Sample Input 2
+Enter number of rows: 5
+Sample Output 2
+*
+**
+***
+****
+*****
+
+31. LCM of Two Numbers
+Question: Calculate the LCM (Least Common Multiple) of two numbers using a for loop.
+Sample Input 1
+Enter first number: 4
+Enter second number: 6
+Sample Output 1
+LCM: 12
+Sample Input 2
+Enter first number: 5
+Enter second number: 10
+Sample Output 2
+LCM: 10
+
+32. Count Prime Numbers in a Range
+Question: Count the number of prime numbers in a given range using a for loop.
+Sample Input 1
+Enter starting number: 1
+Enter ending number: 10
+Sample Output 1
+Number of prime numbers: 4
+Sample Input 2
+Enter starting number: 10
+Enter ending number: 20
+Sample Output 2
+Number of prime numbers: 4
+
+33. Reverse Words in a Sentence
+Question: Reverse the order of words in a sentence using a for loop.
+Sample Input 1
+Enter sentence: Python is easy
+Sample Output 1
+easy is Python
+Sample Input 2
+Enter sentence: I love programming
+Sample Output 2
+programming love I
+
+34. Diamond Pattern
+Question: Print a diamond pattern using nested for loops.
+Sample Input 1
+Enter number of rows: 3
+Sample Output 1
+  *
+ ***
+*****
+ ***
+  *
+Sample Input 2
+Enter number of rows: 2
+Sample Output 2
+ *
+***
+ *
+
+35. Hollow Square Pattern
+Question: Print a hollow square pattern using nested for loops.
+Sample Input 1
+Enter size: 4
+Sample Output 1
+****
+*  *
+*  *
+****
+Sample Input 2
+Enter size: 5
+Sample Output 2
+*****
+*   *
+*   *
+*   *
+*****
+
+36. Factorial Using a Specified Step
+Question: Calculate the factorial of a number using a for loop with a specified step.
+Sample Input 1
+Enter number: 5
+Enter step: 1
+Sample Output 1
+Factorial: 120
+Sample Input 2
+Enter number: 4
+Enter step: 1
+Sample Output 2
+Factorial: 24
+Trainer note: This question is not very clear as written because a factorial normally requires multiplying every integer from 1 through n; changing the step changes the operation. For freshers, I recommend rewriting it as "Calculate the factorial using range(1, n + 1, 1)."
+
+37. Right-Angled Triangle Pattern
+Question: Print a right-angled triangle pattern using a for loop.
+Sample Input 1
+Enter number of rows: 3
+Sample Output 1
+*
+**
+***
+Sample Input 2
+Enter number of rows: 5
+Sample Output 2
+*
+**
+***
+****
+*****
+
+38. Multiples of a Number
+Question: Generate a list of multiples of a number within a given range using a for loop.
+Sample Input 1
+Enter number: 5
+Enter range: 30
+Sample Output 1
+Multiples: [5, 10, 15, 20, 25, 30]
+Sample Input 2
+Enter number: 3
+Enter range: 20
+Sample Output 2
+Multiples: [3, 6, 9, 12, 15, 18]
+
+Quick Trainer Review
+There are a few duplicate/repeated questions in this set:
+Questions
+Observation
+4 & 15
+Both are factorial
+6 & 23
+Both find maximum/largest element
+10, 30 & 37
+All are essentially the same star triangle
+4, 15 & 36
+All involve factorial; Q36 is unclear
+10 & 26
+Both use nested loops for patterns, but Q26 is a number pattern
+20 & 32
+Both deal with prime numbers; Q20 generates them, Q32 counts them
+
+For freshers, I would especially keep 1–9 first, then 11–19, and only after students understand nested loops and basic logic move to 20–38.
