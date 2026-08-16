@@ -12,3 +12,10 @@ for i in range(1, int(n ** 0.5) + 1):
 factors.sort()
 
 print("Factors:", *factors)
+
+if len(factors) == 2:
+    print(f"{n} is a prime number.")
+
+else:
+    print(f"{n} is a composite number.")
+
