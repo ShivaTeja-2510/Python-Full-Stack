@@ -1,0 +1,12 @@
+import platform as p
+print(p.system())
+print(p.version())
+print(p.release())
+print(p.machine())
+print(p.architecture())
+print(p.processor())
+print(p.platform())
+print(p.python_version())
+print(p.python_implementation())
+print(p.uname())
+print(p.node())
